@@ -12,4 +12,12 @@ class Object extends SleepingOwlModel
     function type() {
     	return $this->belongsTo(\App\ObjectType::class);
     }
+
+    function parent_object() {
+    	return $this->belongsTo(\App\Object::class);
+    }
+
+    static function getList() {
+    	return static::lists('name', 'id')->all();
+    }
 }

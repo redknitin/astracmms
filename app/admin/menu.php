@@ -23,9 +23,9 @@ Admin::menu(\App\Uom::class)->label('Unit of Measure');
 Admin::menu(\App\Organization::class)->label('Organization');
 Admin::menu(\App\Part::class)->label('Part');
 Admin::menu(\App\Trade::class)->label('Trade');
-Admin::menu(\App\JobType::class);
-Admin::menu(\App\ObjectType::class);
-Admin::menu(\App\Status::class);
-Admin::menu(\App\Object::class);
-Admin::menu(\App\WorkOrder::class);
+Admin::menu(\App\JobType::class)->label('Job Type');
+Admin::menu(\App\ObjectType::class)->label('Object Type');
+Admin::menu(\App\Status::class)->label('Status');
+Admin::menu(\App\Object::class)->label('Object');
+Admin::menu(\App\WorkOrder::class)->label('Work Order');
 

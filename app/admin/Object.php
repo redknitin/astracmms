@@ -8,6 +8,7 @@ Admin::model(App\Object::class)->title('Object')->with()->filters(function ()
 	Column::string('name', 'Name');
 	Column::string('description', 'Description');
 	Column::string('object_type.name', 'Object Type');
+	Column::string('parent_object.name', 'Parent');
 	Column::string('classification.name', 'Classification');
 	Column::string('category.name', 'Category');
 	Column::string('organization.name', 'Organization');
